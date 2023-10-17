@@ -19,9 +19,11 @@ body {
   font-family: "Outfit", sans-serif;
   border-radius: 30px;
   flex-direction: column;
-  box-shadow: hsl(220, 15%, 55%) 0px 1px 8px, hsl(220, 15%, 55%) 0px 1px 9px;
-  padding: 1.4rem 1.2rem;
-  padding-bottom: 2.3rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  padding: 1.3rem 1.2rem;
+  padding-bottom: 2.2rem;
 }
 
 img {
@@ -31,12 +33,13 @@ img {
 }
 
 .text-below {
-  max-width: 17.5rem;
+  max-width: 18rem;
 }
 
 h3 {
   margin-top: 1.2rem;
   font-weight: 700;
+  font-size: 1.4rem;
   color: hsl(218, 44%, 22%);
 }
 
@@ -46,4 +49,21 @@ p {
   font-weight: 400;
   color: hsl(220, 15%, 55%);
   display: inline;
+}
+
+@media (max-width: 375px) {
+  img {
+    height: 18rem;
+    width: 18rem;
+  }
+  .card {
+    padding: 1.2rem 1rem;
+    padding-bottom: 2.3rem;
+  }
+  .text-below {
+    max-width: 17.1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 }
